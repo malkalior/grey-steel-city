@@ -7,103 +7,97 @@
     <title>GREY STEEL CITY LLC</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: url('High-quality_mockup_images_for_a_professional_real.png') no-repeat center center fixed;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            overflow: hidden;
+        }
+        .mockup-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url('High-quality_mockup_images_for_a_professional_real.png') no-repeat center center;
             background-size: cover;
-            color: white;
         }
-        header {
+        .nav-button {
+            position: absolute;
+            color: white;
             background: rgba(44, 62, 80, 0.8);
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            text-align: center;
-            background: rgba(52, 73, 94, 0.8);
-            padding: 10px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
             font-weight: bold;
+            border-radius: 5px;
         }
-        nav a:hover {
-            text-decoration: underline;
+        .nav-button:hover {
+            background: rgba(52, 152, 219, 0.8);
         }
-        section {
-            padding: 50px 20px;
-            margin: 20px;
-            background: rgba(0, 0, 0, 0.6);
-            border-radius: 10px;
+        #home-btn {
+            top: 20%;
+            left: 10%;
         }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: rgba(44, 62, 80, 0.8);
-            color: white;
+        #about-btn {
+            top: 30%;
+            left: 10%;
         }
-        h2 {
-            text-align: center;
-            color: #ecf0f1;
+        #services-btn {
+            top: 40%;
+            left: 10%;
+        }
+        #gallery-btn {
+            top: 50%;
+            left: 10%;
+        }
+        #contact-btn {
+            top: 60%;
+            left: 10%;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>GREY STEEL CITY LLC</h1>
-        <p>Transforming Homes, Revitalizing Neighborhoods</p>
-    </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#services">Our Services</a>
-        <a href="#gallery">Project Gallery</a>
-        <a href="#contact">Contact Us</a>
-    </nav>
-    <section id="home">
+    <div class="mockup-container">
+        <!-- Buttons positioned over the mockup -->
+        <button class="nav-button" id="home-btn" onclick="scrollToSection('home')">Home</button>
+        <button class="nav-button" id="about-btn" onclick="scrollToSection('about')">About Us</button>
+        <button class="nav-button" id="services-btn" onclick="scrollToSection('services')">Our Services</button>
+        <button class="nav-button" id="gallery-btn" onclick="scrollToSection('gallery')">Project Gallery</button>
+        <button class="nav-button" id="contact-btn" onclick="scrollToSection('contact')">Contact Us</button>
+    </div>
+
+    <!-- Content Sections -->
+    <section id="home" style="padding: 50px; background: white; display: none;">
         <h2>Welcome to GREY STEEL CITY LLC</h2>
-        <p>GREY STEEL CITY LLC is a real estate investment company specializing in revitalizing homes and transforming neighborhoods. Whether it’s through our expert fix-and-flip projects or maintaining a high-quality rental portfolio, we’re dedicated to enhancing the Pittsburgh real estate market and beyond.</p>
+        <p>GREY STEEL CITY LLC is a real estate investment company specializing in revitalizing homes and transforming neighborhoods...</p>
     </section>
-    <section id="about">
+
+    <section id="about" style="padding: 50px; background: white; display: none;">
         <h2>About Us</h2>
-        <p>GREY STEEL CITY LLC is a real estate investment company dedicated to transforming properties and creating value in the Pittsburgh area. Our primary focus is on:</p>
-        <ul>
-            <li><strong>Fix-and-Flip Projects:</strong> Acquiring undervalued properties and transforming them into beautiful, market-ready homes.</li>
-            <li><strong>Rental Portfolios:</strong> Maintaining high-quality rental properties as part of a growing portfolio.</li>
-        </ul>
+        <p>GREY STEEL CITY LLC is a real estate investment company dedicated to transforming properties...</p>
     </section>
-    <section id="services">
+
+    <section id="services" style="padding: 50px; background: white; display: none;">
         <h2>Our Services</h2>
-        <div>
-            <h3>Fix-and-Flip Projects</h3>
-            <p>We specialize in turning potential into reality by purchasing undervalued properties, performing extensive renovations, and preparing them for the market. Our approach emphasizes quality and attention to detail, ensuring that each home we renovate becomes a standout property.</p>
-            <h3>Rental Portfolios</h3>
-            <p>At GREY STEEL CITY LLC, we maintain a growing portfolio of rental properties. Our commitment to quality means that each property reflects the high standards we set in all our projects.</p>
-        </div>
+        <p>We specialize in turning potential into reality...</p>
     </section>
-    <section id="gallery">
+
+    <section id="gallery" style="padding: 50px; background: white; display: none;">
         <h2>Project Gallery</h2>
-        <p>Explore our work! Below, you’ll find a collection of photos and videos showcasing some of the properties we’ve transformed. Each project reflects our dedication to quality craftsmanship and attention to detail.</p>
+        <p>Explore our work! Below, you’ll find a collection of photos and videos showcasing...</p>
     </section>
-    <section id="contact">
+
+    <section id="contact" style="padding: 50px; background: white; display: none;">
         <h2>Contact Us</h2>
         <p>We’d Love to Hear From You!</p>
-        <p>Whether you’re a disposition bank, wholesaler, or real estate professional looking to collaborate, we’re here to connect and build successful partnerships.</p>
-        <p><strong>Contact Information:</strong></p>
-        <ul>
-            <li>Phone: [Insert Phone Number]</li>
-            <li>Email: [Insert Email Address]</li>
-            <li>Address: [Insert Business Address]</li>
-        </ul>
     </section>
-    <footer>
-        <p>&copy; 2025 GREY STEEL CITY LLC. All Rights Reserved.</p>
-    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            // Hide all sections first
+            document.querySelectorAll('section').forEach(section => section.style.display = 'none');
+            // Display the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 </body>
 </html>
