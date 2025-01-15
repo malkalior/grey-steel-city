@@ -10,53 +10,47 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background: url('High-quality_mockup_images_for_a_professional_real.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
         }
         header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px 0;
+            background: rgba(44, 62, 80, 0.8);
+            padding: 20px;
             text-align: center;
         }
         nav {
             text-align: center;
-            background: #34495e;
+            background: rgba(52, 73, 94, 0.8);
             padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav a {
             color: white;
             margin: 0 15px;
             text-decoration: none;
+            font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
         }
         section {
-            padding: 20px;
+            padding: 50px 20px;
             margin: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .gallery img {
-            width: calc(33% - 10px);
-            border-radius: 8px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
         }
         footer {
             text-align: center;
             padding: 10px 0;
-            background: #2c3e50;
+            background: rgba(44, 62, 80, 0.8);
             color: white;
         }
-        #visual-banner img {
-            width: 100%;
-            border-radius: 8px;
+        h2 {
+            text-align: center;
+            color: #ecf0f1;
         }
     </style>
 </head>
@@ -75,11 +69,6 @@
     <section id="home">
         <h2>Welcome to GREY STEEL CITY LLC</h2>
         <p>GREY STEEL CITY LLC is a real estate investment company specializing in revitalizing homes and transforming neighborhoods. Whether it’s through our expert fix-and-flip projects or maintaining a high-quality rental portfolio, we’re dedicated to enhancing the Pittsburgh real estate market and beyond.</p>
-        <p>Our business operates in Allegheny County and the surrounding areas, including Butler, Beaver, and Westmoreland Counties. With a passion for real estate and a commitment to quality, we aim to create beautiful, functional spaces that showcase our expertise and vision.</p>
-    </section>
-    <section id="visual-banner">
-        <h2>Our Vision</h2>
-        <img src="High-quality_mockup_images_for_a_professional_real.png" alt="Mockup of GREY STEEL CITY Website">
     </section>
     <section id="about">
         <h2>About Us</h2>
@@ -88,7 +77,6 @@
             <li><strong>Fix-and-Flip Projects:</strong> Acquiring undervalued properties and transforming them into beautiful, market-ready homes.</li>
             <li><strong>Rental Portfolios:</strong> Maintaining high-quality rental properties as part of a growing portfolio.</li>
         </ul>
-        <p>Founded with the vision of revitalizing local neighborhoods, our team combines experience, creativity, and a commitment to excellence. By focusing on Allegheny County and nearby areas, we ensure that each project aligns with the unique character and needs of the community.</p>
     </section>
     <section id="services">
         <h2>Our Services</h2>
@@ -102,11 +90,6 @@
     <section id="gallery">
         <h2>Project Gallery</h2>
         <p>Explore our work! Below, you’ll find a collection of photos and videos showcasing some of the properties we’ve transformed. Each project reflects our dedication to quality craftsmanship and attention to detail.</p>
-        <div class="gallery">
-            <img src="placeholder1.jpg" alt="Project 1">
-            <img src="placeholder2.jpg" alt="Project 2">
-            <img src="placeholder3.jpg" alt="Project 3">
-        </div>
     </section>
     <section id="contact">
         <h2>Contact Us</h2>
@@ -118,15 +101,6 @@
             <li>Email: [Insert Email Address]</li>
             <li>Address: [Insert Business Address]</li>
         </ul>
-        <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message"></textarea><br>
-            <button type="submit">Submit</button>
-        </form>
     </section>
     <footer>
         <p>&copy; 2025 GREY STEEL CITY LLC. All Rights Reserved.</p>
